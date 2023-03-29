@@ -20,7 +20,6 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 			<br/>Laplaciano
 		</td>
 	</tr>
-	
 	<tr>
 		<td align="center">
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Mediana.png" width="200"/>
@@ -35,7 +34,6 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 			<br/>Média
 		</td>
 	</tr>
-	
 	<tr>
 		<td align="center">
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Prewitt.png" width="200"/>
@@ -50,7 +48,6 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 			<br/>Roberts
 		</td>
 	</tr>
-
 	<tr>
 		<td align="center">
 			
@@ -63,5 +60,4 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 			
 		</td>
 	</tr>
-
 </table>
