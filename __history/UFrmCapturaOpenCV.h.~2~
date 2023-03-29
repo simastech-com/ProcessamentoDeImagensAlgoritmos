@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------
+
+#ifndef UFrmCapturaOpenCVH
+#define UFrmCapturaOpenCVH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TFrmCapturaOpenCV : public TForm
+{
+__published:	// IDE-managed Components
+	void __fastcall EvOnClose(TObject *Sender, TCloseAction &Action);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFrmCapturaOpenCV(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFrmCapturaOpenCV *FrmCapturaOpenCV;
+//---------------------------------------------------------------------------
+#endif

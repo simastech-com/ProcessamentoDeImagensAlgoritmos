@@ -1,0 +1,62 @@
+//---------------------------------------------------------------------------
+
+#ifndef UFrmPrincipalH
+#define UFrmPrincipalH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.ExtDlgs.hpp>
+#include <VCLTee.Chart.hpp>
+#include <VCLTee.Series.hpp>
+#include <VCLTee.TeEngine.hpp>
+#include <VCLTee.TeeProcs.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ToolWin.hpp>
+//---------------------------------------------------------------------------
+class TFrmPrincipal : public TForm
+{
+__published:	// IDE-managed Components
+	TOpenPictureDialog *pdgAbrirImagem;
+	TPanel *Panel1;
+	TLabel *Label1;
+	TEdit *edtLimiar;
+	TLabel *Label2;
+	TEdit *edtTotalPixels;
+	TLabel *Label3;
+	TEdit *edtLargura;
+	TLabel *Label4;
+	TEdit *edtAltura;
+	TChart *grfOriginal;
+	TChart *grfModificado;
+	TBarSeries *Series2;
+	TBarSeries *Series1;
+	TLabel *Label5;
+	TEdit *edtCanal;
+	TLabel *Label6;
+	TEdit *edtPixelsProcessados;
+	TPanel *Panel2;
+	TImage *imgOriginal;
+	TPanel *Panel3;
+	TImage *imgAlteracao;
+	TToolBar *tblOpcoes;
+	TToolButton *btnCarregarImagem;
+	TToolButton *btnBinarizacao;
+	TToolButton *btnQuantizacao;
+	void __fastcall EvCarregarImagemOnClick(TObject *Sender);
+	void __fastcall EvBinarizacaoClick(TObject *Sender);
+	void __fastcall gerarHistogramaOriginal();
+	void __fastcall gerarHistogramaAlterado();
+	void __fastcall EvQuantizacaoOnClick(TObject *Sender);
+private:	// User declarations
+	String caminhoArquivo;
+public:		// User declarations
+	__fastcall TFrmPrincipal(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFrmPrincipal *FrmPrincipal;
+//---------------------------------------------------------------------------
+#endif

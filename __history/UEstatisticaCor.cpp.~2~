@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UEstatisticaCor.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void UEstatisticaCor::setCor(int cor)
+{
+	this.cor = cor;
+}
+int UEstatisticaCor::getCor()
+{
+	return cor;
+}
+void UEstatisticaCor::setQtd(int qtd)
+{
+	this.qtd = qtd;
+}
+int UEstatisticaCor::getQtd()
+{
+	return qtd;
+}

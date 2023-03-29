@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#ifndef UEstatisticaCorH
+#define UEstatisticaCorH
+//---------------------------------------------------------------------------
+public UEstatisticaCor
+{
+	private:
+		int cor;
+		int qtd;
+	public:
+		void setCor(int cor);
+		int getCor();
+		void setQtd(int qtd);
+		int getQtd();
+}
+#endif

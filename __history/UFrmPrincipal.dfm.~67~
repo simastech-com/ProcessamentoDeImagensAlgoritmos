@@ -1,0 +1,261 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Processamento de imagem digital.'
+  ClientHeight = 662
+  ClientWidth = 1008
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 25
+    Width = 1006
+    Height = 72
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Top = 42
+      Width = 27
+      Height = 13
+      Caption = 'Limiar'
+    end
+    object Label2: TLabel
+      Left = 199
+      Top = 12
+      Width = 69
+      Height = 13
+      Caption = 'Total de pixels'
+    end
+    object Label3: TLabel
+      Left = 104
+      Top = 12
+      Width = 37
+      Height = 13
+      Caption = 'Largura'
+    end
+    object Label4: TLabel
+      Left = 8
+      Top = 12
+      Width = 29
+      Height = 13
+      Caption = 'Altura'
+    end
+    object Label5: TLabel
+      Left = 104
+      Top = 42
+      Width = 32
+      Height = 13
+      Caption = 'Canais'
+    end
+    object Label6: TLabel
+      Left = 343
+      Top = 12
+      Width = 90
+      Height = 13
+      Caption = 'Pixels processados'
+    end
+    object edtLimiar: TEdit
+      Left = 41
+      Top = 36
+      Width = 57
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 0
+    end
+    object edtTotalPixels: TEdit
+      Left = 274
+      Top = 7
+      Width = 63
+      Height = 21
+      Enabled = False
+      TabOrder = 1
+    end
+    object edtLargura: TEdit
+      Left = 147
+      Top = 9
+      Width = 46
+      Height = 21
+      Enabled = False
+      TabOrder = 2
+    end
+    object edtAltura: TEdit
+      Left = 43
+      Top = 9
+      Width = 55
+      Height = 21
+      Enabled = False
+      TabOrder = 3
+    end
+    object edtCanal: TEdit
+      Left = 147
+      Top = 36
+      Width = 46
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 4
+    end
+    object edtPixelsProcessados: TEdit
+      Left = 439
+      Top = 7
+      Width = 58
+      Height = 21
+      Enabled = False
+      TabOrder = 5
+    end
+  end
+  object grfOriginal: TChart
+    Left = 8
+    Top = 432
+    Width = 489
+    Height = 222
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'Histograma')
+    BottomAxis.Title.Caption = 'Tonalidade'
+    LeftAxis.Title.Caption = 'Quantidade'
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TBarSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+    end
+  end
+  object grfModificado: TChart
+    Left = 512
+    Top = 432
+    Width = 488
+    Height = 222
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'Histograma')
+    BottomAxis.Title.Caption = 'Tonalidade'
+    LeftAxis.Title.Caption = 'Quantidade'
+    TabOrder = 2
+    ColorPaletteIndex = 13
+    object Series2: TBarSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = clBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      Title = 'seriaModificado'
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+    end
+  end
+  object Panel2: TPanel
+    Left = 93
+    Top = 110
+    Width = 310
+    Height = 310
+    TabOrder = 3
+    object imgOriginal: TImage
+      Left = 5
+      Top = 5
+      Width = 300
+      Height = 300
+      Stretch = True
+    end
+  end
+  object Panel3: TPanel
+    Left = 597
+    Top = 110
+    Width = 310
+    Height = 310
+    TabOrder = 4
+    object imgAlteracao: TImage
+      Left = 5
+      Top = 5
+      Width = 300
+      Height = 300
+      Constraints.MinHeight = 300
+      Constraints.MinWidth = 300
+      Stretch = True
+    end
+  end
+  object tblOpcoes: TToolBar
+    Left = 0
+    Top = 0
+    Width = 1008
+    Height = 29
+    BorderWidth = 1
+    ButtonHeight = 21
+    ButtonWidth = 103
+    Caption = 'tblOpcoes'
+    DrawingStyle = dsGradient
+    EdgeBorders = [ebLeft, ebTop, ebRight, ebBottom]
+    ShowCaptions = True
+    TabOrder = 5
+    Wrapable = False
+    object btnCarregarImagem: TToolButton
+      Left = 0
+      Top = 0
+      Caption = 'Carregar imagem'
+      ImageIndex = 0
+      OnClick = EvCarregarImagemOnClick
+    end
+    object btnBinarizacao: TToolButton
+      Left = 103
+      Top = 0
+      Caption = 'Binarizacao'
+      ImageIndex = 1
+      OnClick = EvBinarizacaoClick
+    end
+    object btnQuantizacao: TToolButton
+      Left = 206
+      Top = 0
+      Caption = 'Quantiza'#231#227'o'
+      ImageIndex = 2
+      OnClick = EvQuantizacaoOnClick
+    end
+    object btnEqualizacao: TToolButton
+      Left = 309
+      Top = 0
+      Caption = 'Equaliza'#231#227'o'
+      ImageIndex = 3
+      OnClick = EvEqualizacaoOnClick
+    end
+    object btnMediaVizinhanca: TToolButton
+      Left = 412
+      Top = 0
+      Caption = 'M'#233'dia da vizinhan'#231'a'
+      ImageIndex = 4
+      OnClick = EvMediaVizinhanca
+    end
+    object btnMediana: TToolButton
+      Left = 515
+      Top = 0
+      Caption = 'Mediana'
+      ImageIndex = 5
+      OnClick = EvMedianaOnClick
+    end
+    object ToolButton1: TToolButton
+      Left = 618
+      Top = 0
+      Caption = 'Sobel'
+      ImageIndex = 6
+      OnClick = EvSobelOnClick
+    end
+  end
+  object pdgAbrirImagem: TOpenPictureDialog
+    InitialDir = 'img'
+    Left = 480
+    Top = 160
+  end
+end
