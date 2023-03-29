@@ -49,15 +49,9 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 		</td>
 	</tr>
 	<tr>
-		<td align="center">
-			
-		</td>
-		<td align="center">
+		<td align="center" colspan="3">
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Sobel.png" width="200"/>
 			<br/>Sobel
-		</td>
-		<td align="center">
-			
 		</td>
 	</tr>
 </table>
