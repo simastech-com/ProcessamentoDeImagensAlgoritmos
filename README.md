@@ -5,22 +5,23 @@ Projeto desenvolvido na disciplina de Processamento de Imagens do 10º semestre 
 Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagens são prints do próprio sistema.
 
 
+<center>
 <table>
 	<tr>
-		<td>
+		<td align="center">
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Binariza%C3%A7%C3%A3o.png" width="200"/>
 			<br/><center>Binarização</center>
 		</td>
-		<td>
+		<td align="center">
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Equaliza%C3%A7%C3%A3o.png" width="200"/>
 			<br/><center>Equalização</center>
 		</td>
-		<td>
+		<td align="center">
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Laplaciano.png" width="200"/>
 			<br/><center>Laplaciano</center>
 		</td>
 	</tr>
-
+</center>
 
 
 </table>
