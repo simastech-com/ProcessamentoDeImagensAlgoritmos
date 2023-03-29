@@ -9,12 +9,15 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 	<tr>
 		<td>
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Binariza%C3%A7%C3%A3o.png" width="200"/>
+			<br/><center>Binarização</center>
 		</td>
 		<td>
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Equaliza%C3%A7%C3%A3o.png" width="200"/>
+			<br/><center>Equalização</center>
 		</td>
 		<td>
 			<img src="https://github.com/simastech-com/ProcessamentoDeImagensAlgoritmos/blob/main/img/Laplaciano.png" width="200"/>
+			<br/><center>Laplaciano</center>
 		</td>
 	</tr>
 
