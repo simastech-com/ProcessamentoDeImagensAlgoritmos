@@ -55,3 +55,5 @@ Abaixo o resultado de cada algoritmo. Clique nas imagens para ampliar. As imagen
 		</td>
 	</tr>
 </table>
+
+Imagem de teste baseada em: https://pixabay.com/pt/photos/cachorro-canino-bicho-de-estima%c3%a7%c3%a3o-5040008/
